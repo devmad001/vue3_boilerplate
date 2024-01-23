@@ -35,6 +35,12 @@ const menuClick = (event, item) => {
     //
   }
 }
+
+const asideLgCloseClick = (event, item) => {
+ alert('sasdsf') 
+ isAsideLgActive.value=!isAsideMobileExpanded.value
+}
+
 </script>
 
 <template>
@@ -70,7 +76,7 @@ const menuClick = (event, item) => {
         :is-aside-lg-active="isAsideLgActive"
         :menu="menuAside"
         @menu-click="menuClick"
-        @aside-lg-close-click="isAsideLgActive = false"
+        @aside-lg-close-click="asideLgCloseClick"
       />
       <slot />
       <FooterBar>

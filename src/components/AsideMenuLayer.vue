@@ -1,5 +1,5 @@
 <script setup>
-import { mdiLogout, mdiClose } from '@mdi/js'
+import { mdiLogout, mdiClose,mdiBackburger } from '@mdi/js'
 import { computed } from 'vue'
 import AsideMenuList from '@/components/AsideMenuList.vue'
 import AsideMenuItem from '@/components/AsideMenuItem.vue'
@@ -9,7 +9,8 @@ defineProps({
   menu: {
     type: Array,
     required: true
-  }
+  },
+  isAsideMobileExpanded:Boolean
 })
 
 const emit = defineEmits(['menu-click', 'aside-lg-close-click'])
@@ -38,10 +39,10 @@ const asideLgCloseClick = (event) => {
     <div class="aside lg:rounded-2xl flex-1 flex flex-col overflow-hidden dark:bg-slate-900">
       <div class="aside-brand flex flex-row h-14 items-center justify-between dark:bg-slate-900">
         <div class="text-center flex-1 lg:text-left lg:pl-6 xl:text-center xl:pl-0">
-          <b class="font-black">One</b>
+          <b class="font-black">GMB Pro</b>
         </div>
-        <button class="hidden lg:inline-block xl:hidden p-3" @click.prevent="asideLgCloseClick">
-          <BaseIcon :path="mdiClose" />
+        <button class="  lg:inline-block   p-3" @click.prevent="asideLgCloseClick">
+          <BaseIcon :path="mdiBackburger" />
         </button>
       </div>
       <div

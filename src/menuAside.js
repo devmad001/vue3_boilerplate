@@ -17,31 +17,16 @@ export default [
   {
     to: '/dashboard',
     icon: mdiMonitor,
-    label: 'Dashboard'
+    label: 'Home'
   },
   {
     to: '/tables',
-    label: 'Tables',
+    label: 'Categories',
     icon: mdiTable
   },
   {
-    to: '/forms',
-    label: 'Forms',
-    icon: mdiSquareEditOutline
-  },
-  {
-    to: '/ui',
-    label: 'UI',
-    icon: mdiTelevisionGuide
-  },
-  {
-    to: '/responsive',
-    label: 'Responsive',
-    icon: mdiResponsive
-  },
-  {
-    to: '/',
-    label: 'Styles',
+    to: '/tables',
+    label: 'Blogs',
     icon: mdiPalette
   },
   {
@@ -49,18 +34,9 @@ export default [
     label: 'Profile',
     icon: mdiAccountCircle
   },
+
   {
-    to: '/login',
-    label: 'Login',
-    icon: mdiLock
-  },
-  {
-    to: '/error',
-    label: 'Error',
-    icon: mdiAlertCircle
-  },
-  {
-    label: 'Dropdown',
+    label: 'Services',
     icon: mdiViewList,
     menu: [
       {
@@ -70,17 +46,5 @@ export default [
         label: 'Item Two'
       }
     ]
-  },
-  {
-    href: 'https://github.com/justboil/admin-one-vue-tailwind',
-    label: 'GitHub',
-    icon: mdiGithub,
-    target: '_blank'
-  },
-  {
-    href: 'https://github.com/justboil/admin-one-react-tailwind',
-    label: 'React version',
-    icon: mdiReact,
-    target: '_blank'
   }
 ]

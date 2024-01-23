@@ -9,7 +9,7 @@ const routes = [
     },
     path: '/',
     name: 'style',
-    component: Style
+    component: Home
   },
   {
     // Document title tag
