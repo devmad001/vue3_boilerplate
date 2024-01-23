@@ -10,17 +10,8 @@
 * SPA with **Router**
 * **Production CSS** is only **&thickapprox;38kb**
 * Reusable components
-* Free under MIT License
  
-## Table of Contents
-## Licensing
-
-- Copyright &copy; 2019-2022 JustBoil.me (https://justboil.me)
-- Licensed under MIT
-
-## Useful Links
-
-- [JustBoil.me](https://justboil.me/)
+## Useful Links 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vue.js 3](https://v3.vuejs.org/)
 - [Vite](https://vitejs.dev)
